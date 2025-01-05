@@ -96,6 +96,7 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  visibility: hidden;
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
@@ -274,5 +275,12 @@
       height: 0.4rem;
       background-color: $c-light;
     }
+  }
+}
+
+.active {
+  .slider__item-text {
+    visibility: visible;
+    animation: fade-in 400ms ease-out;
   }
 }
