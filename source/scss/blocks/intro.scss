@@ -93,6 +93,7 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.27;
+  visibility: hidden;
 
   @media (min-width: $stop-scaling) {
     width: 509px;
@@ -156,9 +157,18 @@
   font-size: 4.8rem;
   line-height: 0.906;
   letter-spacing: -0.04em;
+  overflow: hidden;
+  line-height: normal;
 
   @media (min-width: $stop-scaling) {
     margin: 0 0 0 -5px;
     font-size: 48px;
+  }
+}
+
+.active {
+  .intro__message {
+    visibility: visible;
+    animation: fade-in 400ms ease-out;
   }
 }
