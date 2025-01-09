@@ -3,6 +3,11 @@ export default () => {
   let menuToggler = document.querySelector(`.js-menu-toggler`);
   let menuLinks = document.querySelectorAll(`.js-menu-link`);
 
+  window.addEventListener(`load`, () => {
+    let footer2 = document.querySelectorAll(`.js-header`)[0];
+    footer2.classList.add(`visible`);
+  });
+
   if (menuToggler) {
     menuToggler.addEventListener(`click`, function () {
       if (header.classList.contains(`page-header--menu-opened`)) {

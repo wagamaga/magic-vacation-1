@@ -1,6 +1,11 @@
 export default () => {
   let footerTogglers = document.querySelectorAll(`.js-footer-toggler`);
 
+  window.addEventListener(`load`, () => {
+    let footer2 = document.querySelectorAll(`.js-footer`)[0];
+    footer2.classList.add(`visible`);
+  });
+
   if (footerTogglers.length) {
     for (let i = 0; i < footerTogglers.length; i++) {
       footerTogglers[i].addEventListener(`click`, function () {

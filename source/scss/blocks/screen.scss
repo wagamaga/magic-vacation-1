@@ -37,6 +37,17 @@
   right: 0;
   z-index: 1;
 }
+.js-footer {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 300ms ease-out;
+  transition-delay: 100ms;
+}
 
 .screen__footer {
   position: absolute;
@@ -290,7 +301,8 @@
 
 .screen--story {
   background-color: $c-dark;
-  background-image: url("../img/slide1.jpg"), url("../img/slide2.jpg"), url("../img/slide3.jpg"), url("../img/slide4.jpg");
+  background-image: url("../img/slide1.jpg"), url("../img/slide2.jpg"),
+    url("../img/slide3.jpg"), url("../img/slide4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
